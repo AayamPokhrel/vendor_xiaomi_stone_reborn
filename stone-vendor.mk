@@ -524,6 +524,7 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiservices \
     libqrtr \
+    librmnetctl \
     libthermalclient \
     libxml \
     libmisoundfx \
