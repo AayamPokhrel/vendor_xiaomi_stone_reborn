@@ -487,6 +487,7 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
+    android.hardware.bluetooth.audio@2.0-impl \
     vulkan.adreno \
     libC2D2 \
     libCB \
