@@ -1117,13 +1117,20 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     tcmclient \
+    extphonelib-product \
+    qti-telephony-hidl-wrapper-prd \
+    qti-telephony-utils-prd \
     uimgbalibrary \
     uimgbamanagerlibrary \
     uimservicelibrary \
     com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
     dpmapi \
+    extphonelib \
     qcrilhook \
+    qti-telephony-common \
+    qti-telephony-hidl-wrapper \
+    qti-telephony-utils \
     c2_manifest_vendor.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \

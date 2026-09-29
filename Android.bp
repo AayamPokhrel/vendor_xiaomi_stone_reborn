@@ -20728,6 +20728,33 @@ dex_import {
 }
 
 dex_import {
+    name: "extphonelib-product",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/product/framework/extphonelib-product.jar",
+    ],
+    product_specific: true,
+}
+
+dex_import {
+    name: "qti-telephony-hidl-wrapper-prd",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/product/framework/qti-telephony-hidl-wrapper-prd.jar",
+    ],
+    product_specific: true,
+}
+
+dex_import {
+    name: "qti-telephony-utils-prd",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/product/framework/qti-telephony-utils-prd.jar",
+    ],
+    product_specific: true,
+}
+
+dex_import {
     name: "uimgbalibrary",
     owner: "xiaomi",
     jars: [
@@ -20782,10 +20809,46 @@ dex_import {
 }
 
 dex_import {
+    name: "extphonelib",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/extphonelib.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "qcrilhook",
     owner: "xiaomi",
     jars: [
         "proprietary/system_ext/framework/qcrilhook.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "qti-telephony-common",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/qti-telephony-common.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "qti-telephony-hidl-wrapper",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/qti-telephony-hidl-wrapper.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "qti-telephony-utils",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/qti-telephony-utils.jar",
     ],
     system_ext_specific: true,
 }
