@@ -1018,9 +1018,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
-    vendor.qti.hardware.servicetracker@1.0 \
-    vendor.qti.hardware.servicetracker@1.1 \
-    vendor.qti.hardware.servicetracker@1.2 \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter@1.0 \
     vendor.qti.ims.callcapability@1.0_vendor \
