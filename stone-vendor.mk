@@ -1067,6 +1067,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss@4.0-service.xml \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
+    chargeonlymode \
     STFlashTool \
     adpl \
     adsprpcd \
