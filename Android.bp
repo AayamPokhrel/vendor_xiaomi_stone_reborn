@@ -10,6 +10,29 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libxml2",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libxml2.so",
+            ],
+            shared_libs: [
+                "libandroidicu",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "eglSubDriverAndroid",
     owner: "xiaomi",
     strip: {
@@ -12045,6 +12068,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libipanat",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libipanat.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libipebpsstriping",
     owner: "xiaomi",
     strip: {
@@ -13462,6 +13512,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libnetfilter_conntrack",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnetfilter_conntrack.so",
+            ],
+            shared_libs: [
+                "libnfnetlink",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libnetmgr_common",
     owner: "xiaomi",
     strip: {
@@ -13545,6 +13620,30 @@ cc_prebuilt_library_shared {
                 "libnetmgr",
                 "libnetmgr_common",
                 "librmnetctl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnfnetlink",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnfnetlink.so",
+            ],
+            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -13665,6 +13764,39 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libutilscallstack",
                 "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboffloadhal",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liboffloadhal.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware_legacy",
+                "libhardware",
+                "android.hardware.tetheroffload.config@1.0",
+                "android.hardware.tetheroffload.control@1.0",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -20431,6 +20563,44 @@ sh_binary {
     owner: "xiaomi",
     src: "proprietary/vendor/bin/init.qti.qcv.sh",
     filename: "init.qti.qcv.sh",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "ipacm",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/ipacm",
+            ],
+            shared_libs: [
+                "liboffloadhal",
+                "libipanat",
+                "libxml2",
+                "libnfnetlink",
+                "libnetfilter_conntrack",
+                "libhidlbase",
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware_legacy",
+                "libhardware",
+                "android.hardware.tetheroffload.config@1.0",
+                "android.hardware.tetheroffload.control@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     soc_specific: true,
 }
 
